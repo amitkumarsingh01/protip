@@ -1,6 +1,7 @@
 ## POSTGRESQL QUERY
 
 ### Creating Table
+'''
 CREATE TABLE protip (
     s_no SERIAL PRIMARY KEY,
     company_name VARCHAR(100) NOT NULL,
@@ -18,9 +19,12 @@ CREATE TABLE protip (
     ) STORED,
     invested_date DATE NOT NULL
 );
+'''
 
 ### Viewing Table
+'''
 SELECT * FROM protip
+'''
 
 ## How to install it
 #### Clone
