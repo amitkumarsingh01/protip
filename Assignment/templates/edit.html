@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Stock</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Stock</h1>
+        <form action="{{ url_for('edit', id=stock[0]) }}" method="post">
+            <label for="company_name">Company Name</label>
+            <input type="text" id="company_name" name="company_name" value="{{ stock[1] }}" required>
+
+            <label for="symbol">Symbol</label>
+            <input type="text" id="symbol" name="symbol" value="{{ stock[2] }}" required>
+
+            <label for="bought_price">Bought Price</label>
+            <input type="number" step="0.01" id="bought_price" name="bought_price" value="{{ stock[3] }}" required>
+
+            <label for="current_price">Current Price</label>
+            <input type="number" step="0.01" id="current_price" name="current_price" value="{{ stock[4] }}" required>
+
+            <label for="units">Units</label>
+            <input type="number" id="units" name="units" value="{{ stock[5] }}" required>
+
+            <label for="invested_date">Invested Date</label>
+            <input type="date" id="invested_date" name="invested_date" value="{{ stock[10] }}" required>
+
+            <button type="submit" class="btn">Update Stock</button>
+        </form>
+    </div>
+</body>
+</html>
