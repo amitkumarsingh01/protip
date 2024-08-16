@@ -1,7 +1,7 @@
 ## POSTGRESQL QUERY
 
 ### Creating Table
-'''
+```
 CREATE TABLE protip (
     s_no SERIAL PRIMARY KEY,
     company_name VARCHAR(100) NOT NULL,
@@ -19,39 +19,40 @@ CREATE TABLE protip (
     ) STORED,
     invested_date DATE NOT NULL
 );
-'''
+```
 
 ### Viewing Table
-'''
+```
 SELECT * FROM protip
-'''
+```
 
 ## How to install it
 #### Clone
-'''
+```
 git clone https://github.com/itheaks/protip.git
-'''
+```
 #### Moving to Directery 
-'''
+```
 cd protip
 cd Assignment
-'''
+```
 #### Installing packages and virtal env
-'''
+```
 pip install virtualenv
 virtaulenv venv
 cd venv
 cd Scripts
 activate
 pip install Flask psycopg2-binary
-'''
+```
 #### To run
-'''
+```
 python app.py
-'''
+```
 
 ## Demo
 
 It is in Demo Folder
 
+https://drive.google.com/file/d/1SJRWbX-sdjwsQuIRsRso4sUTQHWO8N9_/view?usp=sharing
 
